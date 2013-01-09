@@ -1,0 +1,692 @@
+#navigation {
+	float: right;
+	margin-left: 20px;
+	font-family: Arial;
+	font-size: 12px;
+}
+
+#site-title {
+	float:left;
+	font-family: "Arial Black";
+	font-size: 15px;
+	margin-top: 30px;
+}
+
+#art{
+	/*float: left;*/
+	/*margin-top:-40px;*/
+	/*margin-left: 20px;*/
+	/*width: 950px;*/
+	/*height: 600px;*/
+}
+
+.narrowcolumn{
+	height: 0px;
+}
+
+#form-top {
+	float: left;
+	/*margin-top:-40px;*/
+	padding-left: 100px;
+	width: auto;
+	background-repeat: no-repeat;
+}
+
+#image-blurb{
+	width: 100%;
+	float: left;
+}
+
+#add-art-image{
+	width: 47%;
+	float: left;
+	cursor: pointer;
+}
+
+#add-art-blurb{
+	width: 51%
+	float: left;
+	padding-top: 46px;
+	cursor: pointer;
+}
+
+#url-url-check{
+	margin-top: 25px;
+	float: left;
+	display: inline;
+}
+
+#add-url{
+	float: left;
+	display: inline;
+}
+
+#add-url-check{
+	float: left;
+	display: inline;
+	padding-left: 10px;
+	padding-top: 13px;
+}
+
+#artist-tags{
+	width: 100%;
+	margin-top: 14px;
+	float: left;
+}
+
+#tag-entry{
+	position: relative;
+	top: -4px;
+}
+
+tag-error-help{
+	cursor: pointer;
+}
+
+#add-artist{
+	width: 23%;
+	float: left;
+	position: relative;
+	top: -4px;
+}
+
+#tag-error{
+	position: relative;
+	top: -3px;
+}
+
+#add-tags{
+	width: 77%;
+	float: left;
+	position: relative;
+	top: -3px;
+	height: 0px;
+}
+
+#tag-question{
+	cursor: pointer;
+}
+
+#tag-question a{
+	color: #DD0000;
+}
+
+#title-year{
+	width: 100%;
+	margin-top: 10px;
+	float: left;
+}
+
+#add-title{
+	width: 23%;
+	float: left;
+}
+
+#add-year{
+	width: 77%;
+	float: left;
+}
+
+#email-name-geo{
+	width: 100%;
+	margin-top: 10px;
+	float: left;
+}
+
+#add-email{
+	width: 23%;
+	float: left;
+}
+
+#add-name{
+	width: 23%;
+	float: left;
+}
+
+#geotag-container{
+	width: 54%;
+	float: left;
+}
+
+#description-geotag-reason{
+	width: 100%;
+	margin-top: 10px;
+	float: left;
+	height: 120px;
+}
+
+#add-description{
+	width: 46%;
+	float: left;
+}
+
+#geotag-texts{
+	width: 54%;
+	float: left;
+	padding-top: 0px;
+}
+
+#geotag-description{
+	width: 100%;
+	height: 50%;
+}
+
+#geotag-reason{
+	width: 100%;
+	height: 50%;
+}
+
+#theme-top{
+	width: 100%;
+	padding-top: 30px;
+	float: left;
+}
+
+#theme-image{
+	width: 46%;
+	float: left;
+}
+
+#form-small{
+	padding-left: 100px;
+}
+
+h1 {
+	font-family: Arial;
+	font-size: 40px;
+	color: #cd0a0a;
+}
+
+h2 {
+	font-family: Arial;
+	font-size: 10px;
+	color: #FFFFFF;
+}
+
+.form-field{
+	/*width: 429px;*/
+	width: 175px;
+	height: 18px;
+	background-image: url('http://www.paradisoprojects.com/dev/rawwar/site/images/form_artist.png');
+}
+
+.form-field-description{
+	/*width: 429px;*/
+	width: 370px;
+	height: 100px;
+	background-image: url('http://www.paradisoprojects.com/dev/rawwar/site/images/description.jpg');
+	border: 0px;
+}
+
+#geolocation{
+	font-family: Arial;
+	font-size: 14px;
+	color: #FFFFFF;
+}
+
+/* Override wordpress css */
+
+#content {
+	padding-left: 0px;
+}
+
+#header{
+	margin: 0px;
+}
+
+/* FORM FIELDS */
+
+input {
+	border: 1px solid gray;
+	font-family: Arial;
+}
+
+.search-input {
+	
+}
+#search-submit {
+	height: 17px;
+}
+
+.main-input {
+	font-size: 12px;
+}
+
+.desc-input {
+	font-size: 12px;
+}
+
+.url-input {
+	width: 600px;
+	height: 40px;
+	font-size: 20px;
+	float:left;
+	background-image: url('http://www.paradisoprojects.com/dev/rawwar/site/images/form_link.png');
+}
+
+#url-check {
+	float:left;
+}
+
+.default {
+	color: gray;
+}
+
+/* THEMES */
+
+.themes-title {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.theme {
+	width: 750px;
+	height: auto;
+	margin-top: 15px;
+}
+
+.theme-con {
+	width: 750px;
+	height: auto;
+	margin-top: 15px;
+}
+
+.theme-body {
+	width: 100%;
+	height: auto;
+	margin-top: 15px;
+}
+
+.theme-reads {
+	font-size: 10px;
+	cursor: pointer;
+	font-family: Verdana;
+	color: #FFFFFF;
+}
+
+#read-more{
+	padding-left: 47px;
+}
+
+#read-less{
+	padding-left: 47px;
+}
+
+.theme-id {
+	width: 750px;
+	height: auto;
+	margin-top: 15px;
+}
+
+.theme-media {
+	width: 750px;
+	height: auto;
+	margin-top: 15px;
+}
+
+.theme-act {
+	width: 750px;
+	height: auto;
+	margin-top: 15px;
+}
+
+#submit {
+	width: 750px;
+	height: auto;
+	margin-top: 15px;
+	float: left;
+	cursor: pointer;
+}
+
+.theme-cb-container {
+	height:auto;
+	padding-top: 2px;
+}
+
+.theme-cb {
+	width:20px;
+}
+
+.theme-info {
+	/* float:right; */
+	width: 650px;
+	padding-left: 10px;
+	padding-top: -1px;
+}
+
+.theme-title {
+	font-family: Arial;
+	font-size: 18px;
+	color: #FFFFFF;
+	padding-left: 20px;
+}
+
+.theme-description {
+	width: 100%;
+	float: left;
+	font-family: verdana;
+	color: #FFFFFF;
+	font-size: 10px;
+	
+}
+
+.theme-small{
+	font-family: verdana;
+	color: #888888;
+	font-size: 10px;
+	padding-top: 5px;
+}
+
+.add-art-small{
+	font-family: helvetica;
+	color: #cd0a0a;
+	font-size: 12px;
+	padding-top: 26px;
+}
+
+.hidden-description{
+	width: 10%;
+	float: left;
+}
+
+.hidden-image{
+	width: 20%
+	float: left;
+}
+
+#theme-desc-body{
+	width: 100%;
+	float: left;
+	padding-left: 40px;
+}
+
+#hidden-desc-body{
+	width: 35%;
+	float: left;
+	padding-left: 7px;
+}
+
+#hidden-image-body1{
+	float: left;
+	width: 13%
+}
+
+#hidden-image-body2{
+	float: left;
+	width: 13%
+}
+
+#hidden-image-body3{
+	float: left;
+	width: 33%
+}
+
+#hidden-desc-con{
+	width: 35%;
+	float: left;
+	padding-left: 25px;
+}
+
+#hidden-image-con1{
+	float: left;
+	width: 17%
+}
+
+#hidden-image-con2{
+	float: left;
+	width: 17%
+}
+
+#hidden-image-con3{
+	float: left;
+	width: 25%
+}
+#cb{
+	float: left;
+}
+
+.checkBox
+{
+    background-position: 0px 0px;
+	 background-image: url('http://www.paradisoprojects.com/dev/rawwar/site/images/unselected.png');
+}
+
+
+.checkBoxClear
+{
+    background-position: 0px 0px;
+	 background-image: url('http://www.paradisoprojects.com/dev/rawwar/site/images/selected.png');
+}
+
+.checkBox, .checkBoxClear
+{
+    background-repeat: no-repeat;
+    float: left;
+    width: 25px;
+    height: 30px;
+    padding: 0px;
+    margin: 0px;
+    cursor: hand;
+}
+
+/* GEOTAGGING */
+
+#geotag-container {
+	font-size: 10px;
+	padding-top: 25px;
+}
+
+#geotag-cb-container {
+	float:left;
+}
+
+#geotag-cb {
+	width: 40;
+	height: 40px;
+}
+
+#geotag-title {
+	font-family: verdana;
+	font-size: 12px;
+	color: #FFFFFF
+}
+
+.geo{
+	padding-left: 25px;
+}
+
+h2.geotag-description {
+	color: #FFFFFF;
+}
+
+#geotag-location {
+	font-weight: bold;
+}
+
+/* MISC */
+
+#trace {
+	float:clear;
+}
+
+.clearall {
+	clear: both;
+}
+
+/* Submit */
+
+#submit{
+	height: 200px;
+}
+
+#submit img{
+	width: 175px;
+}
+
+/*Overlay*/
+.simple-overlay {
+	/* must be initially hidden */
+	display:none;
+	
+	/* place overlay on top of other elements */
+	z-index:10000;
+	
+	/* styling */
+	background-image:url('http://www.paradisoprojects.com/dev/rawwar/site/images/overlay.png');
+	width:602px;	
+	height: 435px;
+	min-height:200px;
+	border:0px;
+	
+	/* CSS3 styling for latest browsers */
+	-moz-box-shadow:0 0 90px 5px #000;
+	-webkit-box-shadow: 0 0 90px #000;	
+}
+
+#tag-overlay{
+	display:none;
+	z-index:10000;
+	background-image:url('http://www.paradisoprojects.com/dev/rawwar/site/images/overlay.png');
+	width:500px;	
+	height: 170px;
+	min-height:200px;
+	border:0px;
+}
+
+#tag-overlay .close{
+	background-image:url('http://www.paradisoprojects.com/dev/rawwar/site/images/selected.png');
+	background-repeat: no-repeat;
+	position:absolute;
+	right:-15px;
+	top:5px;
+	cursor:pointer;
+	height:35px;
+	width:35px;
+}
+
+.simple-overlay .close {
+	background-image:url('http://www.paradisoprojects.com/dev/rawwar/site/images/selected.png');
+	background-repeat: no-repeat;
+	position:absolute;
+	right:-15px;
+	top:5px;
+	cursor:pointer;
+	height:35px;
+	width:35px;
+}
+
+.overlay-text{
+	color: #b6b6b6;
+	font-family: verdana;
+	font-size: 10px;
+}
+
+a:link{
+	color:#FF0000;
+	text-decoration: none;
+}
+
+#overlay-content{
+	padding-bottom: 30px;
+	padding-left: 30px;
+	padding-top: 20px;
+	padding-right: 30px;
+}
+
+.overlay-ol{
+	list-style-type: circle;
+}
+
+#body-test{
+	width: 100%;
+	margin-top: 10px;
+	float: left;	
+}
+
+#body-test-cb{
+	width: 3%;
+	float: left;
+}
+
+#body-test-image{
+	width: 26%;
+	float: left;
+}
+
+#body-test-question{
+	width: 71%;
+	float: left;
+	padding-top: 2px;
+}
+
+#theme-body{
+	width: 100%;
+	margin-top: 10px;
+	float: left;
+}
+#theme-body-left{
+	width: 46%;
+	float: left;
+}
+#theme-body-left-top{
+	width: 100%;
+}
+
+.theme-check{
+	padding-left: 10px;
+	display: inline;
+	width: 5px;
+}
+
+.theme-text{
+	color: #DFDFDF;
+	font-family: verdana;
+	font-size: 10px;
+}
+
+.error-text{
+	color: #FF0000;
+	font-family: verdana;
+	font-size: 10px;
+}
+
+.theme-image{
+	padding-left: 10px;
+	display: inline;
+}
+
+.question-mark{
+	padding-left: 5px;
+	display: inline;
+	cursor: pointer;
+}
+#body-theme-left-bottom{
+	width: 100%;
+	height: 80%;	
+}
+#theme-body-right{
+	width: 54%;
+	float: left;
+}
+
+.theme-thumbnail{
+	float: left;
+	padding-left: 20px;
+}
+
+.theme-description-new{
+	padding-left: 33px;
+	padding-right: 30px;
+	padding-top: 10px;
+}
+
+.thanks{
+	padding-left: 100px;
+	padding-top: 100px;
+}
+
+.response{
+	background-image:url('http://www.paradisoprojects.com/dev/rawwar/site/images/bg_splash.png');
+	background-repeat: no-repeat;
+	height: 1000px;
+}
