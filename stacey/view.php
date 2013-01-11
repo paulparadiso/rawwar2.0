@@ -1,14 +1,12 @@
-<?php
-// Template Name: archive view Template
-?>
+$def with(header)
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 	<head>
 		<title>Revolution Art Women  | The Installation</title>
-		<link type="text/css" href="/css/archive.css" rel="Stylesheet" />
-		<link type="text/css" href="/css/events.css" rel="Stylesheet" />
-		<link type="text/css" href="/css/smoothness/jquery-ui-1.8.6.custom.css" rel="Stylesheet" />
+		<link type="text/css" href="static/css/archive.css" rel="Stylesheet" />
+		<link type="text/css" href="static/css/events.css" rel="Stylesheet" />
+		<link type="text/css" href="static/css/smoothness/jquery-ui-1.8.6.custom.css" rel="Stylesheet" />
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
 	</head>
 	<body>
@@ -25,33 +23,7 @@
 		
 			<!-- BEGIN HEADER -->
 			
-			<div id="header">
-			
-				<img id="logo" src="/img/rawwar-site_03.png" alt="rawwar-site_03" width="226" height="151" style="float:left;" />
-			
-				<br />
-				
-				<div style="margin-top:30px;">
-					<a href="/">
-						<img src="/img/rawwar-site_down_06.png" alt="Archive" width="101" height="46" />
-					</a>
-					<a href="/submit/">
-						<img src="/img/rawwar-site_down_07.png" alt="Submit" width="90" height="46" />
-					</a>
-					<a href="http://womenartrevolution.com/" target="_blank">
-						<img src="/img/rawwar-site_down_08.png" alt="The Film" width="72" height="46" />
-					</a>
-                    
-                    	<a href="/events/" target="new"><img src="http://184.106.93.224/img/rawwar-site_down_09.png" alt="Events" width="95" height="46" />
-                        </a>
-	
-					<img src="/img/rawwar-site_14.png" alt="View The Installation" width="223" height="46" />
-					
-					<a href="/about/">
-						<img src="/img/rawwar-site_down_11.png" alt="About" width="89" height="45" />
-					</a>
-				</div>
-			</div>
+			$:header
 			
 			<div style="clear:both;"></div>
 			
@@ -82,7 +54,6 @@
 			
 			<!-- BEGIN FOOTER -->
 			
-<?php get_footer(); ?>
 </div>
 </div>
 </body>

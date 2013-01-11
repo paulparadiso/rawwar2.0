@@ -1,20 +1,16 @@
-<?php
-// Template Name: archive index Template
-?>
-
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 	<head>
 		<title>RAW/WAR: Revolution Art Women</title>
         <meta name="keywords" content="raw/war, lynn leeson, lynn hershman leeson, feminist art, sundance, new frontier, revolution, women, art, women art revolution, paradiso projects, new frontier, interactive installation, wiimote, crowdsourced" />
 		<meta name="description" content="RAW/WAR is built on user contributions with the goal of creating a history defined by the community." />
-		<link type="text/css" href="css/archive.css" rel="Stylesheet" />
-		<link type="text/css" href="css/smoothness/jquery-ui-1.8.6.custom.css" rel="Stylesheet" />
-		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
-		<script type="text/javascript" src="js/jquery-ui-1.8.6.custom.min.js"></script>
-		<script type="text/javascript" src="js/jquery.autoclear.min.js"></script>
-		<script type="text/javascript" src="js/archive.js"></script>
-		<script type="text/javascript" src="js/testdata.js"></script>
+		<link type="text/css" href="static/css/archive.css" rel="Stylesheet" />
+		<link type="text/css" href="static/css/smoothness/jquery-ui-1.8.6.custom.css" rel="Stylesheet" />
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script type="text/javascript" src="static/js/jquery-ui-1.8.6.custom.min.js"></script>
+		<script type="text/javascript" src="static/js/jquery.autoclear.min.js"></script>
+		<script type="text/javascript" src="static/js/archive.js"></script>
+		<script type="text/javascript" src="static/js/testdata.js"></script>
 	</head>
 	<body>
 	
@@ -97,23 +93,23 @@ fo">
 			<div id="header">		
 															      <br />
 			
-				<img id="logo" src="img/rawwar-site_03.png" alt="rawwar-site_03" width="226" height="151" style="float:left;" />
+				<img id="logo" src="static/img/rawwar-site_03.png" alt="rawwar-site_03" width="226" height="151" style="float:left;" />
 				<div style="margin-top:30px;">
-					<img src="img/rawwar-site_06.png" alt="rawwar-site_06" width="101" height="46" />
+					<img src="static/img/rawwar-site_06.png" alt="rawwar-site_06" width="101" height="46" />
 					<a href="submit">
-						<img src="img/rawwar-site_down_07.png" alt="Subimt" width="90" height="46" />
+						<img src="static/img/rawwar-site_down_07.png" alt="Subimt" width="90" height="46" />
 					</a>
 					<a href="http://womenartrevolution.com" target="_blank">
-						<img src="img/rawwar-site_down_08.png" alt="The Film" width="72" height="46" />
+						<img src="static/img/rawwar-site_down_08.png" alt="The Film" width="72" height="46" />
 					</a>
 					<a href="events">
-						<img src="img/rawwar-site_down_09.png" alt="Events" width="95" height="46" />
+						<img src="static/img/rawwar-site_down_09.png" alt="Events" width="95" height="46" />
 					</a>
 						<a href="/view/">
-						<img src="img/rawwar-site_down_10.png" alt="View" width="223" height="46" />
+						<img src="static/img/rawwar-site_down_10.png" alt="View" width="223" height="46" />
 					</a>
 					<a href="about">
-						<img src="img/rawwar-site_down_11.png" alt="About" width="89" height="45" />
+						<img src="static/img/rawwar-site_down_11.png" alt="About" width="89" height="45" />
 					</a>
 				</div>
 			</div>
@@ -126,19 +122,19 @@ fo">
 				<div class="hline"></div>
 				<div class="close">
 					<a href="javascript:closeSubmitInfo()">
-						<img src="img/close.png" alt="close" width="46" height="14" />
-						<img src="img/rawwar-site_60.png" alt="rawwar-site_60" width="12" height="12" />
+						<img src="static/img/close.png" alt="close" width="46" height="14" />
+						<img src="static/img/rawwar-site_60.png" alt="rawwar-site_60" width="12" height="12" />
 					</a>
 				</div>
 				<div style="clear:both;"></div>
 				
 				<div style="float:left; margin-right:40px;">
 				<!-- RAW/WAR is built on user contributions, with the goal of creating a history defined by the community. Submit an artwork or start by exploring the archive below. -->
-					<img src="img/description.png" alt="description" width="525" height="139" />
+					<img src="static/img/description.png" alt="description" width="525" height="139" />
 				</div>
 				
 				<a href="http://184.106.93.224/submit/">
-					<img src="img/submit_artwork.png" alt="submit_artwork" width="330" height="48" />
+					<img src="static/img/submit_artwork.png" alt="submit_artwork" width="330" height="48" />
 				</a>
 				<br />
 				
@@ -185,11 +181,11 @@ echo trim($artwork_count);
 				<input id="archive-search" class="courier" type="text" name="archive-search" value="Search by Keyword"></input>
 				
 				<a href="javascript:doSearch();" style="">
-					<img id="search-icon" src="img/rawwar-site_29.png" alt="rawwar-site_29" width="13" height="17" />
+					<img id="search-icon" src="static/img/rawwar-site_29.png" alt="rawwar-site_29" width="13" height="17" />
 				</a>
 				
 				<a href="javascript:clearSearch();">
-					<img id="clear-search-icon" style="display:none;" src="img/rawwar-site_60.png" alt="rawwar-site_60" width="12" height="12" />
+					<img id="clear-search-icon" style="display:none;" src="static/img/rawwar-site_60.png" alt="rawwar-site_60" width="12" height="12" />
 				</a>
 				
 				<span id="searching-notification">
@@ -197,7 +193,7 @@ echo trim($artwork_count);
 				</span>
 				
 				<a href="http://184.106.93.224/submit/" style="float:right;">
-					<img src="img/rawwar-site_32.png" alt="rawwar-site_32" width="164" height="13" />
+					<img src="static/img/rawwar-site_32.png" alt="rawwar-site_32" width="164" height="13" />
 				</a>
 				
 				<br /><br />
@@ -205,23 +201,23 @@ echo trim($artwork_count);
 				<!-- BEGIN SEARCH FILTER SECTION -->
 				<div id="search-filter">
 					<a href="javascript:toggleFilterView();" style="margin-right:70px;">
-						<img id="filter-open-arrow" src="img/rawwar-site_40.png" alt="rawwar-site_40" width="16" height="10" />
-						<img src="img/rawwar-site_down_12.png" alt="rawwar-site_down_12" width="187" height="17" />
+						<img id="filter-open-arrow" src="static/img/rawwar-site_40.png" alt="rawwar-site_40" width="16" height="10" />
+						<img src="static/img/rawwar-site_down_12.png" alt="rawwar-site_down_12" width="187" height="17" />
 					</a>
 					
-					<img src="img/rawwar-site_43.png" alt="rawwar-site_43" width="48" height="11"/>
+					<img src="static/img/rawwar-site_43.png" alt="rawwar-site_43" width="48" height="11"/>
 					<span id="theme-selection" class="filter-selection">Multiple</span>
 					
-					<img src="img/rawwar-site_46.png" alt="rawwar-site_46" width="48" height="11"  style="margin-left:58px;"/>
+					<img src="static/img/rawwar-site_46.png" alt="rawwar-site_46" width="48" height="11"  style="margin-left:58px;"/>
 					<span id="media-selection" class="filter-selection">All</span>
 					
-					<img src="img/rawwar-site_49.png" alt="rawwar-site_49" width="57" height="11"  style="margin-left:50px;"/>
+					<img src="static/img/rawwar-site_49.png" alt="rawwar-site_49" width="57" height="11"  style="margin-left:50px;"/>
 					<span id="decade-selection" class="filter-selection">All</span>
 		                        <!--
 					<img src="img/rawwar-site_51.png" alt="rawwar-site_51" width="36" height="11"  style="margin-left:40px;"/>
 		                        <span id="tags-selection" class="filter-selection"><Multiple</span>
 		                        -->
-					<img src="img/rawwar-site_blank.png" alt="rawwar-site_blank" width="36" height="11"  style="margin-left:40px;"/>
+					<img src="static/img/rawwar-site_blank.png" alt="rawwar-site_blank" width="36" height="11"  style="margin-left:40px;"/>
 		                        <!--<span id="tags-selection" class="filter-selection">&nbsp;</span>-->
 					
 					<div id="filter-collapsible" style="display:none;">

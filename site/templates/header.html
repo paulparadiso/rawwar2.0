@@ -1,0 +1,51 @@
+$def with(page)
+
+<div id="header">		
+	<br/>
+	<img id="logo" src="static/img/rawwar-site_03.png" alt="rawwar-site_03" width="226" height="151" style="float:left;"/>
+	<div style="margin-top:30px;">
+			<a href="/">
+				<img 
+				$if page=='archive':
+					src="static/img/rawwar-site_06.png" 
+				$else:
+					src="static/img/rawwar-site_down_06.png"
+				alt="rawwar-site_06" width="101" height="46" />
+			</a>
+			<a href="submit">
+				<img 
+				$if page=='submit':
+					src="static/img/rawwar-site_08.png" 
+				$else:
+					src="static/img/rawwar-site_down_07.png"
+				alt="Subimt" width="90" height="46" />
+			</a>
+			<a href="http://womenartrevolution.com" target="_blank">
+				<img src="static/img/rawwar-site_down_08.png" alt="The Film" width="72" height="46" />
+			</a>
+			<a href="events">
+				<img
+				$if page=='events': 
+					src="static/img/rawwar-site_12.png" 
+				$else:
+					src="static/img/rawwar-site_down_09.png"
+				alt="Events" width="95" height="46" />
+			</a>
+			<a href="view">
+				<img 
+				$if page=='view':
+					src="static/img/rawwar-site_14.png" 
+				$else:
+					src="static/img/rawwar-site_down_10.png"
+				alt="View" width="223" height="46" />
+			</a>
+			<a href="about">
+				<img 
+				$if page=='about':
+					src="static/img/rawwar-site_16.png" 
+				$else:
+					src="static/img/rawwar-site_down_11.png"
+				alt="About" width="89" height="45" />
+			</a>
+	</div>
+</div>

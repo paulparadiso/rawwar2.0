@@ -59,7 +59,7 @@ INSERT INTO `artists` (`id`, `name`, `dob`, `bio`) VALUES
 (39, 'Stephanie Dodes', NULL, NULL),
 (40, 'Cornelia Parker', NULL, NULL),
 (41, 'Alexandra Exter', NULL, NULL),
-(42, ' Věra Chytilová ', NULL, NULL),
+(42, 'Věra Chytilová ', NULL, NULL),
 (43, 'Otis College Of Art And Design', NULL, NULL),
 (44, 'Jane Campion', NULL, NULL),
 (45, 'Lizzie Borden', NULL, NULL),

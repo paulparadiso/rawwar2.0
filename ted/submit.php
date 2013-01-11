@@ -76,7 +76,7 @@ function render_form() {
 				<input type="hidden" id="artwork-type" name="artwork-type" value="video" ></input>
 			<div id="form-top">
             	<div id="image-blurb">
-               	<div id="add-art-image" ><img class="submit" src="http://www.paradisoprojects.com/dev/rawwar/site/images/submit_artwork.png"></div>
+               	<div id="add-art-image" ><img class="submit" src="static/img/submit_artwork.png"></div>
                   <div id="add-art-blurb"><span class="add-art-small">SUBMISSION GUIDELINES >></span></div>
                </div>
 					<div id="url-url-check">
@@ -90,13 +90,13 @@ function render_form() {
 				</div>
 				<div id="form-small">                              
                <div id="artist-tags">
-                   <div id="add-artist"><img src="http://www.paradisoprojects.com/dev/rawwar/site/images/text_artist.png"><br />
+                   <div id="add-artist"><img src="static/img/text_artist.png"><br />
                    	<span id="artist-error" class="error-text">&nbsp;</span><br>
                    	<input id="artistname" name="artistname" type="text" class="form-field autoclear main-input" value="Artist's name"></input>
                    </div>
               <div id="add-tags">
-                   	<img src="http://www.paradisoprojects.com/dev/rawwar/site/images/text_tags.png"><span class="tag-question question-mark">
-						<img width="10" src="http://paradisoprojects.com/dev/rawwar/site/images/question_unclicked.png">					
+                   	<img src="static/img/text_tags.png"><span class="tag-question question-mark">
+						<img width="10" src="static/img/question_unclicked.png">					
 						</span><br />
                    	<span id="tag-error" class="error-text">&nbsp;</span><br>
 							<div id="tag-entry">                     
@@ -107,24 +107,24 @@ function render_form() {
 				<!--<div id="tag-container"></div><br />-->                  
              	 <div id="title-year">
              	 	<div id="add-title">
-                		<img src="http://www.paradisoprojects.com/dev/rawwar/site/images/text_title.png"><br />
+                		<img src="static/img/text_title.png"><br />
                 		<span id="title-error" class="error-text">&nbsp;</span><br>
                  		<input id="title" name="post-title" type="text" class="form-field autoclear main-input" value="Title of artwork"></input>
                 	</div>
                 	<div id="add-year">
-                		<img src="http://www.paradisoprojects.com/dev/rawwar/site/images/text_year.png"><br />
+                		<img src="static/img/text_year.png"><br />
                 		<span id="year-error" class="error-text">&nbsp;</span><br>
                   	<input id="year" name="year" type="text" class="form-field autoclear main-input" value="Artwork creation date"></input>
                 	</div>
                 </div>
                 <div id="email-name-geo">
                   <div id="add-email">
-                  	<img src="http://www.paradisoprojects.com/dev/rawwar/site/images/text_email.png"><br />
+                  	<img src="static/img/text_email.png"><br />
                   	<span id="email-error" class="error-text">&nbsp;</span><br>
 							<input id="email" name="email" type="text" class="form-field autoclear main-input" value="Your email address"></input>
 						</div>
 						<div id="add-name">
-							<img src="http://www.paradisoprojects.com/dev/rawwar/site/images/text_name.png"><br />
+							<img src="static/img/text_name.png"><br />
 							<span id="name-error" class="error-text">&nbsp;</span><br>
                      <input id="firstname" 	name="firstname" class="form-field autoclear main-input" type="text" value="Your first name"></input>
                    </div>
@@ -134,7 +134,7 @@ function render_form() {
 									<input type="hidden" name="geotag" value="1"></input>														
 								</div>
 								<div>
-									<img src="http://www.paradisoprojects.com/dev/rawwar/site/images/geotag_this.png"><br>
+									<img src="static/img/geotag_this.png"><br>
 									<h2>This will display your approximate location as<br>&nbsp;&nbsp;&nbsp;<span id="geotag-location"></span> in the archive.	
 								</div>
 							</div>
@@ -148,7 +148,7 @@ function render_form() {
 							<input type="hidden" name="geotag_longitude" value="none"></input>					
 						<div id="description-geotag-reason">						
 							<div id="add-description">
-                   		<img src="http://www.paradisoprojects.com/dev/rawwar/site/images/description_name.png"><br />
+                   		<img src="static/img/description_name.png"><br />
                    		<span id="description-error" class="error-text">&nbsp;</span><br>
                      	<textarea id="description-input" name="description" type="text" class="form-field-description autoclear desc-input" value="Please enter a brief description of the artwork <br> you are submitting."></textarea>
                    	</div>						
