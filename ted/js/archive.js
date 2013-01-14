@@ -8,7 +8,7 @@
 
 /************* Constants     **************/
 
-DEBUG = false;
+DEBUG = true;
 
 VIEW_THUMBS				= 0;
 VIEW_LIST				= 1;
