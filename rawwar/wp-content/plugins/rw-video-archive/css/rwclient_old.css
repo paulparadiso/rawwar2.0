@@ -1,0 +1,228 @@
+#add_video_div {
+	display: none;
+}
+
+.player_container {
+	margin: 0 auto;
+	padding: 0;
+	border: black solid 1px;
+	max-width: 100%;
+}
+
+.video {
+	max-width: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: #ADADAD;
+}
+
+.control_bar {
+	height: 44px;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	cursor: pointer;
+}
+
+.control_bar>div {
+	height: 30px;
+	margin: 0;
+	padding: 0;
+}
+
+.play_button {
+	/*
+	position: absolute;
+	left: 0;
+	*/
+	float: left;
+	width: 30px;
+
+	background: transparent url("images/playpausebutton.png") no-repeat right top;
+}
+
+.start_button {
+	float: left;
+	width: 30px;
+	background: transparent url("images/ends_buttons.png") no-repeat right bottom;
+}
+
+.end_button {
+	float: left;
+	width: 30px;
+	background: transparent url("images/ends_buttons.png") no-repeat right top;
+	display: none;
+}
+
+.newclip_button {
+	/*
+	position: absolute;
+	left: 0;
+	*/
+	float: right;
+	width: 30px;
+
+	background: transparent url("images/newclip_button.png") no-repeat right top;
+}
+
+.video_time {
+	width: 80px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 10px;
+	color: #666;
+	text-align: center;
+	vertical-align: middle;
+	padding-top: 2px;
+	float: right;
+/*
+	position: absolute;
+	right: 0;
+*/
+}
+
+div.play_bar {
+	cursor: pointer;
+
+	height: 14px;
+	width: auto;
+	/* padding: 8px 90px 8px 50px; */
+	padding: 0;
+	margin: 0;
+}
+
+div.play_bar>div {
+	float: left;
+	height: 12px;
+	width: 0;
+}
+
+.loaded-outside {
+	background-color: #AAA;
+	border-top: solid 1px #888;
+	border-bottom: solid 1px #888;
+	display: none;
+}
+
+div.play_bar>div.loaded-inside {
+	background-color: #888;
+	border-top: solid 1px #888;
+	border-bottom: solid 1px #888;
+}
+
+.unloaded-outside {
+	background-color: #CCC;
+	border-top: dashed 1px #888;
+	border-bottom: dashed 1px #888;
+	display: none;
+}
+
+div.play_bar>div.unloaded-inside {
+	background-color: #999;
+	border-top: dashed 1px #777;
+	border-bottom: dashed 1px #777;
+}
+
+div.play_bar>div.loaded-inside + div.unloaded-inside {
+	width: 100%;
+}
+
+div.play_bar>div.play_marker_range {
+	width: 100%;
+	position: absolute;
+	cursor: pointer;
+}
+
+div.play_bar>div>div.play_marker {
+	position: absolute;
+	width: 14px;
+	height: 12px;
+	left: 0;
+	cursor: pointer;
+}
+
+div.play_marker>div {
+	background-image:url("images/play_marker.png");
+	background-repeat: no-repeat;
+	position: absolute;
+	height: 14px;
+	width: 14px;
+	left: -8px;
+}
+
+div.play_bar>div>div.in_marker {
+	position: absolute;
+	width: 14px;
+	height: 12px;
+	left: 24.8%;
+	display: none;
+}
+
+div.in_marker>div {
+	background-image:url("images/inout_marker.png");
+	background-repeat: no-repeat;
+	position: absolute;
+	height: 20px;
+	width: 7px;
+	left: -8px;
+}
+
+div.play_bar>div>div.out_marker {
+	position: absolute;
+	width: 14px;
+	height: 12px;
+	left: 42.4%;
+	display: none;
+}
+
+div.out_marker>div {
+	background-image:url("images/inout_marker.png");
+	background-repeat: no-repeat;
+	background-position: right center;
+	position: absolute;
+	height: 20px;
+	width: 7px;
+	left: 0px;
+}
+
+.edit_clip_form {
+	display: none;
+	padding: 8px;
+}
+
+.edit_clip_form .clip_times {
+	float: right;
+}
+
+.edit_clip_form .clip_times h4 {
+	margin: 0;
+}
+
+.edit_clip_form .clip_title,
+.edit_clip_form .clip_description,
+.edit_clip_form .clip_keywords {
+	width: 60%;
+}
+
+.edit_clip_form .clip_description {
+	height: 5em;
+}
+
+.edit_clip_form div.clip_name,
+.edit_clip_form div.clip_email {
+	display: inline-block;
+	clear: both;
+	margin-right: 10px;
+}
+
+.edit_clip_form div.clip_error {
+	float: left;
+	margin-top: 4px;
+}
+
+.edit_clip_form div .clip_description_error,
+.edit_clip_form div .clip_title_error,
+.edit_clip_form div.clip_error
+{
+	color: #E71818;
+}

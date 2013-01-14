@@ -1,0 +1,279 @@
+/*
+Theme Name: RAW/WAR
+Theme URI: http://womenartrevolution.com
+Description: White as Milk is a clean template that puts focus on the content rather than the design.
+Version: 1.8
+Author: Brian Chirls
+Author URI: http://chirls.com
+Tags: custom
+*/
+
+body{
+	font-family: 'Lucida Grande', Verdana, Arial, 'Bitstream Vera Sans', sans-serif;
+	font-size:12px;
+	margin: 0;
+	text-align: left;
+}
+
+a, a:visited {
+	color: #820a0f;
+	text-decoration: none;
+	border: none;
+}
+
+h2 a, h2 a:visited {
+	color: #cc0000;
+}
+
+
+#content {
+	/* width: 72%;  */
+	padding: 0 0 20px 30px;
+	margin: 0 auto;
+	min-width: 600px;
+	overflow:hidden;
+	}
+
+#content.narrowcolumn {
+	/* float: right; */
+	margin-right: 20px;
+}
+
+#content.widecolumn h2 {
+	font-size: 2em;
+	font-weight: bold;
+	margin: 0;
+}
+
+.widecolumn .post div.mediadetails h2,
+.widecolumn .post div.mediadetails .rating {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.widecolumn .post div.mediadetails .rating {
+	margin: 0 20px;
+}
+
+#content.narrowcolumn .post + .post {
+	border-top: black solid 1px;
+}
+
+#sidebar {
+text-align:right;
+float: left;
+}
+
+.narrowcolumn .thumbnail {
+	float: left;
+	margin-right: 4px;
+	width: 130px;
+}
+
+.narrowcolumn .thumbnail + .entry {
+	margin-left: 135px;
+}
+
+/*Width of the sidebar*/
+  #sidebar {width:180px;}
+
+/*Background Color of the page*/
+  body {background-color:white;}
+
+#footer p {
+	width: 72%;
+	min-width: 600px;
+	margin: 0 auto 1em auto;
+}
+
+#content .postmetadata {
+	padding-top:14px;
+	color:#555;
+	margin: 10px 0;
+	clear: both;
+}
+
+
+/* Begin Lists
+
+	Special stylized non-IE bullets
+	Do not work in Internet Explorer, which merely default to normal bullets. */
+
+html>body .entry ul {
+	margin-left: 0px;
+	padding: 0 0 0 30px;
+	list-style: none;
+	padding-left: 10px;
+	text-indent: -10px;
+	}
+
+html>body .entry li {
+	margin: 7px 0 8px 10px;
+	}
+
+.entry ul li:before, #sidebar ul ul li:before {
+	content: "\00BB \0020";
+	}
+
+.entry ol {
+	padding: 0 0 0 35px;
+	margin: 0;
+	}
+
+.entry ol li {
+	margin: 0;
+	padding: 0;
+	}
+
+.postmetadata ul, .postmetadata li {
+	display: inline;
+	list-style-type: none;
+	list-style-image: none;
+	}
+
+#sidebar ul, #sidebar ul ol {
+	margin: 0;
+	padding: 0;
+	}
+
+#sidebar ul li {
+	list-style-type: none;
+	list-style-image: none;
+	margin-bottom: 15px;
+	}
+
+#sidebar ul p, #sidebar ul select {
+	margin: 5px 0 8px;
+	}
+
+#sidebar ul ul, #sidebar ul ol {
+	margin: 5px 0 0 10px;
+	}
+
+#sidebar ul ul ul, #sidebar ul ol {
+	margin: 0 0 0 10px;
+	}
+
+ol li, #sidebar ul ol li {
+	list-style: decimal outside;
+	}
+
+#sidebar ul ul li, #sidebar ul ol li {
+	margin: 3px 0 0;
+	padding: 0;
+	}
+/* End Entry Lists */
+
+
+
+/* Begin Form Elements */
+#searchform {
+	margin: 10px auto;
+	padding: 5px 0px 5px 3px;
+}
+
+#header #searchform {
+	margin: 12px;
+	float: right;
+	padding: 0;
+}
+
+#header #searchform label {
+	display: none;
+}
+
+#sidebar #searchform #s {
+	width: 108px;
+	padding: 1px;
+}
+
+#sidebar #searchsubmit {
+	padding: 1px;
+}
+
+p img {
+	padding: 0;
+	max-width: 100%;
+	}
+
+a img {
+	border: none;
+	}
+
+.alt {
+	background-color: #f8f8f8;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
+
+#commentform textarea {
+	width: 99%;
+	margin: 0 2px;
+}
+
+#footer {
+	clear: both;
+}
+
+#header .page_item a {
+	text-decoration: none;
+	color: #FFF;
+}
+
+.section {
+	font-size: 18px;
+	font-weight: bold;
+*	background-color: #EEE; */
+	padding: 4px 4px;
+/*	margin-left: -4px;
+	margin-right: 10px; */
+}
+
+.frontpage-feature {
+	width: 47%;
+	float: right;
+}
+
+/*
+.frontpage-feature .thumbnail {
+	width: 90%;
+	min-width: 300px;
+	float: none;
+}
+
+.frontpage-feature .thumbnail + .entry {
+	margin-left: 0;
+}
+*/
+
+.frontpage-about {
+	width: 47%;
+	font-size: 14px;
+}
+
+.frontpage-browse {
+	clear: both;
+}
+
+.frontpage-section {
+	-webkit-border-radius: 4px;
+	/*border: #DFDFDF solid 1px; */
+	margin-right: 10px;
+	margin-top: 10px;
+	background-image: url('images/gradient.png');
+	background-repeat: repeat-x;
+	padding: 4px 10px;
+}
+
+ul.frontpage {
+	list-style-type: none;
+	-webkit-padding-start: 0;
+	-moz-padding-start: 0;
+}
+
+ul.frontpage li {
+	display: inline;
+	margin: 0 0.5em 0 0;
+	font-size: 1.5em;
+	padding: 0;
+}

@@ -1,0 +1,329 @@
+body {
+	font-family: Arial;
+	background-color: #000000;
+}
+
+#navigation {
+	float: right;
+	margin-left: 20px;
+	font-family: Arial;
+	font-size: 12px;
+}
+
+#site-title {
+	float:left;
+	font-family: "Arial Black";
+	font-size: 15px;
+	margin-top: 30px;
+}
+
+#art{
+	float: left;
+	/*margin-top:-40px;*/
+	/*margin-left: 20px;*/
+	width: auto;
+	background-image:url('http://www.paradisoprojects.com/dev/rawwar/site/images/b_splash.png');
+	background-repeat: no-repeat;
+}
+
+#form {
+	float: left;
+	/*margin-top:-40px;*/
+	padding-left: 100px;
+	width: auto;
+	background-image:url('http://www.paradisoprojects.com/dev/rawwar/site/images/b_splash.png');
+	background-repeat: no-repeat;
+}
+
+#form-small{
+	padding-left: 100px;
+}
+.autoclear{
+	float: left;
+	display: inline;
+}
+
+.ol-image{
+	list-style-type: none;
+	width: 602px;
+}
+
+.li-image{
+	display: inline;
+	width: 396px;
+}
+
+.li-blurb{
+	display: inline;
+	width: 206px;
+}
+
+.ol-url{
+	list-style-type: none;
+	width: 776px;
+}
+
+.li-url{
+	width: 756px;
+	display: inline;
+	float: left;
+}
+
+.li-url-check{
+	width: 20px;
+	display: inline;
+	float: left;
+}
+
+.ol-artist{
+	list-style-type: none;
+}
+
+.ol-artist{
+	float: left;
+	display: inline;
+	width: 1050px;
+}
+
+.li-artist{
+	width: 435px;
+}
+
+.li-type{
+	width: 315px;
+}
+
+.li-tags{
+	width: 300px;
+}
+
+.ol-title{
+	list-style-type: none;
+	width: 1200px;
+}
+
+.ol-title{
+	float: left;
+	display: inline;
+	width: 600px;
+}
+
+.ol-email ol{
+	list-style-type: none;
+	/*width: 800px;*/
+}
+
+.ol-email ol li{
+	float: left;
+	display: inline;
+	/*width: 500px;*/
+}
+
+h1 {
+	font-family: Arial;
+	font-size: 40px;
+	color: #FF0000;
+}
+
+h2 {
+	font-family: Arial;
+	font-size: 10px;
+	color: #FFFFFF;
+}
+
+#ytlink{
+	margin-top: 20px;
+}
+
+#ytlink input{
+	margin-left: 1px;
+}
+
+#ytlink li{
+	margin-top: 20px;
+}
+
+#ytlink li div{
+	margin-left: 20px;
+}
+
+#artistname{
+	width: 429px;
+	height: 39px;
+	background-image: url('http://www.paradisoprojects.com/dev/rawwar/site/images/form_artist.png');
+}
+
+#art-type{
+	width: 305px;
+	height: 39px;
+	background-image: url('http://www.paradisoprojects.com/dev/rawwar/site/images/form_type.png');
+}
+
+#tags-input{
+	width: 288px;
+	height: 39px;
+	background-image: url('http://www.paradisoprojects.com/dev/rawwar/site/images/form_tags.png');
+}
+
+#email{
+	width: 429px;
+	height: 39px;
+	background-image: url('http://www.paradisoprojects.com/dev/rawwar/site/images/form_email.png');
+}
+
+#firstname{
+	width: 305px;
+	height: 39px;
+	background-image: url('http://www.paradisoprojects.com/dev/rawwar/site/images/form_name.png');
+}
+
+#title{
+	width: 428px;
+	height: 39px;
+	background-image: url('http://www.paradisoprojects.com/dev/rawwar/site/images/form_title.png');
+}
+
+#year{
+	width: 118px;
+	height: 39px;
+	background-image: url('http://www.paradisoprojects.com/dev/rawwar/site/images/form_year.png');
+}
+
+/* Override wordpress css */
+
+#content {
+	padding-left: 0px;
+}
+
+#header{
+	margin: 0px;
+}
+
+#add{
+	padding-top: 70px;
+}
+
+/* FORM FIELDS */
+
+input {
+	border: 1px solid gray;
+	font-family: Arial;
+}
+
+.search-input {
+	
+}
+#search-submit {
+	height: 17px;
+}
+
+.main-input {
+	font-size: 16px;
+}
+
+.url-input {
+	width: 756px;
+	height: 60px;
+	font-size: 20px;
+	float:left;
+	background-image: url('http://www.paradisoprojects.com/dev/rawwar/site/images/form_link.png');
+}
+
+#url-check {
+	float:left;
+}
+
+.default {
+	color: gray;
+}
+
+/* THEMES */
+
+#themes {
+	margin-left: 25px;
+	margin-top: 15px;
+	float:right;
+	width: 500px;
+	font-size:12px;
+}
+
+.themes-title {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.theme {
+	height: auto;
+	margin-top: 15px;
+}
+
+.theme-cb-container {
+	height:auto;
+	float:left;
+}
+
+.theme-cb {
+	width:20px;
+}
+
+.theme-info {
+	/* float:right; */
+	width: 600px;
+}
+
+.theme-title {
+	font-weight: bold;
+}
+
+.theme-readmore {
+	font-size: 10px;
+	cursor: pointer;
+}
+
+.theme-description {
+	
+}
+
+/* GEOTAGGING */
+
+#geotag-container {
+	font-size: 10px;
+	width: 200px;
+}
+
+#geotag-cb-container {
+	width: 30px;
+	height: 150px;
+	float:left;
+}
+
+#geotag-cb {
+	width: 40;
+	height: 40px;
+}
+
+#geotag-title {
+	font-size: 12px;
+	font-weight: bold;
+}
+
+h2.geotag-description {
+	color: #FFFFFF;
+}
+
+#geotag-location {
+	font-weight: bold;
+}
+
+#geotag-title h2{
+}
+
+/* MISC */
+
+#trace {
+	float:clear;
+}
+
+.clearall {
+	clear: both;
+}

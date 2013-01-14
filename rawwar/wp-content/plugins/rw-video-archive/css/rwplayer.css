@@ -1,0 +1,304 @@
+.player_container {
+	margin: 0 auto;
+	border: black solid 1px;
+	max-width: 100%;
+	width: 600px;
+}	
+
+.video_container {
+	padding: 0;
+	position: relative;
+}
+
+.fullscreen > .video_container {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+body.fullscreen,
+.fullscreen #sidebar {
+	height: 10px;
+	overflow: hidden;
+}
+
+.video_container .video_title {
+	display: none;
+	position: absolute;
+	margin: 6px;
+	padding: 4px;
+	font-size: 20px;
+	background-color: #fff;
+
+	/* http://robertnyman.com/2010/01/11/css-background-transparency-without-affecting-child-elements-through-rgba-and-filters/ */
+	background-color: rgba( 255, 255, 255, 0.4);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#66FFFFFF, endColorstr=#66FFFFFF);
+	-ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#66FFFFFF, endColorstr=#66FFFFFF);
+}
+
+.paused .video_title,
+.video_container:hover .video_title {
+	display: block;
+}
+
+.video {
+	max-width: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: #ADADAD;
+}
+
+.play_bar {
+	position: relative;
+	height: 12px;
+	width: auto;
+	padding: 0;
+	margin: 0;
+
+	cursor: pointer;
+	border-top: black solid 1px;
+	border-bottom: black solid 1px; /* temp */
+	background-color: #fff;
+}
+
+.play_bar > div {
+	float: left;
+	height: 100%;
+	width: 0;
+}
+
+.play_bar .play-inside {
+	background-color: #d0c8c5;
+}
+
+.play_bar .play-outside {
+	background-color: #e4dbd8;
+}
+
+div.play_bar > div.play_marker_range {
+	width: 100%;
+	position: absolute;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+div.play_bar>div>div.play_marker {
+	position: absolute;
+	width: 31px;
+	height: 14px;
+	left: -17px;
+	cursor: pointer;
+
+	background-image:url("../images/play_marker2.png");
+	background-repeat: no-repeat;
+}
+
+div.play_bar .in_marker {
+	background-image: url("../images/player_icons.png");
+	background-repeat: no-repeat;
+	background-position: -130px top;
+	height: 12px;
+	width: 10px;
+	position: absolute;
+	display: none;
+}
+
+div.play_bar .out_marker {
+	background-image: url("../images/player_icons.png");
+	background-repeat: no-repeat;
+	background-position: -150px top;
+	height: 12px;
+	width: 10px;
+	position: absolute;
+	display: none;
+}
+
+.control_bar {
+	height: 30px;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	position: relative;
+/*	bottom: 14px; */
+	bottom: 0px;
+	
+	background-color: #fff;
+}
+
+.control_bar>div {
+	height: 30px;
+	margin: 0;
+	padding: 0;
+	line-height: 30px;
+	font-size: 14px;
+	color: #000;
+	text-align: center;
+	vertical-align: middle;
+	float: left;
+}
+
+.control_bar>div.func_button {
+	float: right;
+	padding: 0 1em;
+	border-left: black solid 1px;
+	cursor: pointer;
+
+	color: transparent;
+	background-image: url('../images/player_icons.png');
+}
+
+.control_bar>div.func_button:hover {
+	color: black;
+	background-image: none;
+}
+
+.play_button {
+	/*
+	position: absolute;
+	left: 0;
+	*/
+	width: 30px;
+
+	cursor: pointer;
+	border-right: black solid 1px;
+	background: transparent url("../images/playpausebutton.png") no-repeat right top;
+}
+
+.control_bar>div.video_time {
+	width: 100px;
+	height: 28px;
+	padding-top: 1px;
+	padding-left: 8px;
+	float: left;
+}
+
+.control_bar>div.mute_button {
+	width: 40px;
+
+	cursor: pointer;
+	background: transparent url("../images/player_icons.png") no-repeat left top;
+}
+
+.control_bar>div.volume_slider {
+	width: 100px;
+	height: 0px;
+	margin: 14px 0;
+	border-top: black solid 1px;
+	float: left;
+	position: relative;
+}
+
+.control_bar>div.volume_slider>span.volume_slider_handle {
+	height: 9px;
+	width: 9px;
+	border: black solid 1px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 4px;
+	-o-border-radius: 4px;
+	border-radius: 6px;
+
+	background-color: white;
+	position: absolute;
+	cursor: pointer;
+	top: -6px;
+	left: 0;
+}
+
+.control_bar > .share_button {
+	background-position: 197px 0%;
+}
+
+.control_bar > .fullscreen_button {
+	background-position: 412px 0px;
+}
+
+.control_bar > .editclip_button {
+	background-position: 306px 0px;
+}
+
+.clip_panel {
+	clear: both;
+	padding: 20px;
+	
+	display: none;
+	border-top: black solid 1px;
+}
+
+.edit_clip_form > label,
+.edit_clip_form .clip_times > label{
+	display: block;
+}
+
+.edit_clip_form .clip_times {
+	float: right;
+}
+
+.edit_clip_form_mini .clip_times {
+	float: none;
+	padding: 0 4px 4px 4px;
+}
+
+.edit_clip_form_mini {
+	border-top: 1px solid black;
+}
+
+.edit_clip_form_mini .clip_times > label{
+	display: inline;
+}
+
+.edit_clip_form input[type=text],
+.edit_clip_form textarea {
+	width: 380px;
+}
+
+.edit_clip_form .clip_times input[type=text] {
+	width: 100px;
+}
+
+.edit_clip_form .clip_categories {
+	max-height: 100px;
+	width: 160px;
+	overflow-y: scroll;
+	display: inline-block;
+
+	list-style-type: none;
+	-webkit-padding-start: 0;
+	-moz-padding-start: 0;
+	-o-padding-start: 0;
+	padding-start: 0;
+}
+
+.edit_clip_form .clip_categories li:before {
+	content: '';
+}
+
+.edit_clip_form .clip_categories li label {
+	padding: 0 0.8em 0 0;
+	white-space:nowrap;
+}
+
+.share_clip_form div.share_element {
+	display: inline-block;
+	
+	margin: 10px;
+}
+
+.share_clip_form div.share_icon {
+	width: 35px;
+	height: 35px;
+	background-image: url('../images/share_icons.png');
+	background-repeat: no-repeat;
+	margin: 0 auto 10px;
+}		
+
+.share_clip_form div.share_element label {
+	display: block;
+	margin: 4px auto;
+}
+
+.share_clip_form div.share_element textarea {
+	width: 259px;
+	height: 38px;
+}

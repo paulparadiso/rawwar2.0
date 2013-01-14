@@ -1,0 +1,68 @@
+html {
+	background-color: #fff;
+}
+
+a, a:visited {
+	color: #820a0f;
+}
+
+#adminmenu .wp-submenu a, #adminmenu .wp-submenu a:visited,
+#adminmenu .wp-submenu-head,
+#adminmenu a {
+	color: #cc0000;
+}
+
+.login #backtoblog {
+	padding-bottom: 130px;
+	background-image: url('images/raw_banner.jpg');
+	background-color: #000;
+	background-repeat: no-repeat;
+	background-attachment: top left;
+	text-align: right;
+
+}
+
+.login #backtoblog a {
+	color: #ffffff;
+	margin-right: 10px;
+}
+
+#login {
+	margin-top: 160px;
+}
+
+#login h1 {
+	display: none;
+}
+
+#wphead {
+	background-color: #000000;
+	background-image: none;
+}
+
+#wphead #header-logo {
+	display: none;
+}
+
+#wphead #site-heading {
+	padding: 0;
+}
+
+#wphead #site-heading>a {
+	display: none;
+}
+
+#wphead #site-heading>a:first-child {
+/*	margin-left: 600px;*/
+	text-indent: -999px;
+/*	font-size: 1px;  */
+	background: url("images/raw_banner.jpg") no-repeat scroll 0px -72px transparent;
+	height: 46px;
+	/* margin: 12px 3px 0pt 20px;*/
+	width: 657px;
+	display: block;
+}
+
+#wphead, #wphead #user_info a {
+	color: #ffffff;
+}
