@@ -3,16 +3,23 @@ import couchdb
 
 fields = {
 	0: 'id',
-	1: 'name',
-	2: 'dob',
-	3: 'bio',
+	1: 'type',
+	2: 'title',
+	3: 'url',
+	4: 'work_date',
+	5: 'artist',
+	6: 'uploader',
+	7: 'post_id',
+	8: 'upload_date',
+	9: 'foreign_key',
 }
-artists_file = 'artists.txt'
+artworks_file = 'artworks.txt'
 paran_pattern = '\\((.*?)\\)'
-bad_chars = "()'\n"
+split_pattern = '''((?:[^,"']|"[^"]*"|'[^']*')+)'''
+bad_chars = "()\n"
 output = {}
 db_name = "rawwar_raw"
-db_doc = "artists_raw"
+db_doc = "artworks_raw"
 couch = couchdb.Server()
 db = couch[db_name]
 
@@ -23,20 +30,28 @@ def extract_string(s, p):
 	return db_str	
 
 if __name__ == "__main__":
-	a_file = open(artists_file, 'r')
+	a_file = open(artworks_file, 'r')
 	pattern = re.compile(paran_pattern)
 	lines = a_file.readlines()
 	artist_lines = []
 	for i in lines:
 		artist_lines.append(extract_string(i, pattern))
 	for i in artist_lines:
-		cut_str = i.split(',')
-		key = cut_str[0]
+		s_p = re.compile(split_pattern)
+		PATTERN = re.compile(r'''((?:[^,"']|"[^"]*"|'[^']*')+)''')
+		#cut_str = i.split(', ')
+		cut_str = PATTERN.split(i)
+		#print cut_str
+		key = cut_str[1]
 		count = 1
 		data = {}
-		for j in cut_str[1:]:
-			#print j
+		for j in cut_str[2:-1]:
 			#print "setting " + fields[count] + " to " + j
+			if(j == ','):
+				#print "passing"
+				continue
+			#print "past pass"
+			#print j
 			data[fields[count]] = j
 			count = count + 1
 		output[key] = data

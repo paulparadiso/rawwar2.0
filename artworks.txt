@@ -21,7 +21,7 @@
 (40, 'video', 'Everyone I Have Ever Slept With ', 'http://www.youtube.com/watch?v=15jVnBlt6e0', '1963-1995 (1', 49, 12, 636, '2011-01-11 23:31:08', '15jVnBlt6e0'),
 (41, 'image', 'Judith Beheading Holofernes', 'http://www.arlindo-correia.com/agentileschi2.jpg', '1620', 50, 12, 638, '2011-01-11 23:38:25', NULL),
 (42, 'video', '\\"the Female Gaze\\" At Cheim & Read', 'http://www.youtube.com/watch?v=E51UeePwDFs&has_verified=1', '2009', 51, 12, 639, '2011-01-11 23:48:40', 'E51UeePwDFs'),
-(43, 'image', 'N/a', 'http://3.bp.blogspot.com/_ouxxa0eFam8/SmhcC7V965I/AAAAAAAAD2A/yXQUMq3ceyc/s1600-h/diane_arbus_14.jpg', '1960s; 1970s', 52, 12, 640, '2011-01-11 23:54:18', NULL),
+(43, 'image', 'N/a', 'http://3.bp.blogspot.com/_ouxxa0eFam8/SmhcC7V965I/AAAAAAAAD2A/yXQUMq3ceyc/s1600-h/diane_arbus_14.jpg', '1960s, 1970s', 52, 12, 640, '2011-01-11 23:54:18', NULL),
 (44, 'image', 'Chew', 'http://3.bp.blogspot.com/_jeSuLa5ZscU/TNIuFoU4GPI/AAAAAAAAqzQ/SgRfNJp-3Lw/s1600/DSC_0093.jpg', '2010', 53, 12, 641, '2011-01-12 00:00:49', NULL),
 (45, 'image', 'Knees Together', 'http://www.brooklynmuseum.org/eascfa/feminist_art_base/archive/images/57.105.jpg', '2003', 54, 12, 642, '2011-01-12 00:03:00', NULL),
 (46, 'image', 'Odalisque', 'http://www.brooklynmuseum.org/eascfa/feminist_art_base/archive/images/57.106.jpg', '1998', 54, 12, 643, '2011-01-12 00:42:15', NULL),
