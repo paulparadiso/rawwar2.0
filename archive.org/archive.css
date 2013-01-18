@@ -1,0 +1,385 @@
+
+
+
+
+
+/*
+     FILE ARCHIVED ON 20:39:19 Sep 3, 2011 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 5:20:50 Jan 18, 2013.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+#traceBox {
+	position:		fixed;
+	background: 	white;
+	color:			gray;
+	overflow:		auto;
+	height:			100px;
+	width:			300px;
+	bottom:			5px;
+	right:			5px;
+	text-align:		right;
+	/* vertical-align: bottom; */
+	font-family: 	Courier;
+	font-size: 		smaller;
+	z-index: 10;
+}
+
+body {
+	font-family: Monaco;
+	background-color: #000000;
+	background-image: url(/web/20110903203919/http://rawwar.org/img/rawwar-site-background1.png);
+	text-align: center;
+	
+	color: #aaaaaa;
+}
+
+a {
+	color:white;
+	text-decoration: none;
+}
+
+img {
+	border: 0px;
+}
+
+#content-container {
+	text-align: left;
+	width: 980px;
+	margin: 0px auto;
+	position: relative;
+}
+
+#content {
+	/* width: 600px; */
+	background:none;
+/*	top: 0px;
+	left: 0px;*/
+	z-index: 5;
+	position: relative;
+	margin: 15px;
+}
+
+.bg {	
+	top: 0px;
+	left: 0px;
+	background-color: #000000;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	z-index: 1;
+	position: absolute;
+}
+
+.translucent {
+	filter:alpha(opacity=65);
+	-moz-opacity:0.65;
+	-khtml-opacity: 0.65;
+	opacity: 0.65;
+}
+
+.courier {
+	font-family: Monaco;
+}
+
+#header {
+	font-size: 10px;
+	color: gray;
+}
+
+#header img {
+	
+}
+
+#submit-info {
+	color: white;
+	font-size:22px;
+	line-height: 30px;
+	padding-bottom: 25px;
+	margin-bottom: 0px;
+	margin-left: 10px;
+	border-bottom: 1px #222222 solid;
+}
+
+.hline {
+	height: 1px;
+	width: 860px;
+	background-color: #222222;
+	margin-bottom:30px;
+	float: left;
+}
+
+.close {
+	font-size: 8px;
+	float:right;
+	margin-top:-12px;
+}
+
+#archive {
+	
+}
+
+input#archive-search {
+	color: #666666;
+	padding: 4px;
+	width: 220px;
+	font-size: 11px;
+	border: 1px gray solid;
+	background-color: #111111;
+}
+
+#search-icon {
+	position: relative;
+	top: 5px;
+	margin-left: -28px;
+}
+
+#clear-search-icon {
+	position: relative;
+	top: 2px;
+	margin-left: -28px;
+}
+
+#searching-notification {
+	margin-left: 15px;
+	font-size: 12px;
+}
+
+#search-filter {
+	background-color: #111111;
+	padding: 10px;
+}
+
+.filter-selection {
+	color: #dddddd;
+	font-family: Monaco;
+	font-size: small;
+	background-color: #1c1c1c;
+	padding: 5px;
+}
+
+#filter-collapsible {
+	margin-left: 3px;
+	margin-top: 10px;
+}
+
+.filter-section {
+	font-size: 10px;
+	float: left;
+	border-left: 1px #333333 solid;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#filter-info {
+	width: 231px;
+	float:left;
+	font-size: 11px;
+	padding-right:40px;
+}
+
+#filter-theme {
+	width: 159px;
+	
+}
+
+#filter-media {
+	width:110px;
+}
+
+#filter-decade {
+	width:110px;
+}
+
+#filter-tags {
+	width:110px;
+}
+
+#archive-nav {
+	margin-top: 10px;
+	font-size: 13px;
+}
+
+#sort-menu {
+	background-color: #666666;
+	border: 1px gray solid;
+}
+
+.archive-view {
+	font-size:11px;
+	margin-left: 10px;
+	margin-right: 20px;
+	padding: 5px;
+}
+
+.archive-view-selected {
+	color: #dddddd;
+	font-family: Monaco;
+	background-color: #1c1c1c;
+	
+}
+
+#page-nav {
+	float:right;
+}
+
+.archive {
+	margin-top: 20px;
+	margin-left: 15px;
+}
+
+#list-column-left {
+	float:left;
+	width: 400px;
+	padding-right: 55px;
+	border-right: 1px #111 solid;
+}
+
+#list-column-right {
+	float:right;
+	width: 400px;
+	margin-right: 50px;
+}
+
+.archive-item-thumbnail {
+	float:left;
+	margin: 0px 14px 30px;
+	width: 200px;
+	padding: 2px;
+	height: 200px;
+	text-align: left;
+	font-size: 11px;
+}
+
+.archive-item-thumbnail img {
+	max-width: 200px;
+	max-height: 150px;
+	margin: auto;
+	padding: 2px;
+	border: 1px black solid;
+}
+
+.archive-item-list {
+	width: 400px;
+	height: 135px;
+	margin: 7px 10px;
+	border: 1px black solid;
+	padding: 2px;
+	overflow: hidden;
+}
+
+.archive-item-list-bg {
+	background-color: #111;
+	width: 400px;
+	height: 135px;
+	z-index: 6;
+	position: absolute;
+}
+
+.archive-item-list-contents {
+	position: relative;
+	background: none;
+	z-index: 7;
+	padding: 15px;
+	font-family: Monaco;
+	font-size: 11px;
+}
+
+.list-item-image {
+	float:left;
+	max-width: 134px;
+	margin-right: 15px;
+}
+
+.list-item-info {
+	color: #ddd;
+}
+
+.list-item-property {
+	margin-bottom: 5px;
+}
+
+.list-property-name {
+	font-size: 16px;
+	font-variant: small-caps;
+	color: #333;
+}
+
+#footer {
+	margin-top: 30px;
+	border-top: 1px #222222 solid;
+	padding-top: 18px;
+}
+
+/*********** MEDIA VIEWER ***********/
+
+#dimmer {
+	position:fixed;
+	left:0;
+	top:0;
+	width:100%;
+	height:2000px;
+	z-index: 998;
+	background-color: #000;
+}
+
+#viewer {
+	position: absolute;
+	left: 100px;
+	top: 50px;
+	width: 600px;
+	/* height: 700px; */
+	background-color: #0a0a0a;
+	color: #ccc;
+	z-index: 999;
+	padding: 25px;
+	text-align: left;
+}
+
+#viewer-video {
+	width: 480px;
+	height: 385px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -15px;
+	margin-bottom: 15px;
+}
+
+#item-info {
+	width: 566px;
+	margin-left: 17px;
+	margin-top: 20px;
+	float: left;
+	/* overflow: auto; */
+}
+
+.item-property {
+	font-size:12px;
+}
+
+.item-property-name {
+	font-family: Arial;
+	font-size: 16px;
+	font-variant: small-caps;
+	color: #444;
+}
+
+.item-headline {
+	font-family: Monaco;
+	font-size: 28px;
+	letter-spacing: 0.12em;
+	margin-bottom: 16px;
+}
+
+#item-sidebar {
+	border-left: 1px #222222 solid;
+	padding-left: 8px;
+}
+
+a:link {color: #FF0000; text-decoration: none; }
+a:active {color: #FF0000; text-decoration: none; }
+a:visited {color: #FF0000; text-decoration: none; }
+a:hover {color: #FFFFFF; text-decoration: none; }

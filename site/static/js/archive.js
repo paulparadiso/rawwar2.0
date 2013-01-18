@@ -51,7 +51,7 @@ function init(){
 	
 	$('#archive-search').autoclear();
 	
-	setView(VIEW_THUMBS);
+	setView(VIEW_LIST);
 	
 	doSearch();
 }
@@ -81,11 +81,13 @@ function doSearch(){
 	var searchVal = $('#archive-search').val();
 	//trace("doSearch: "+searchVal);
 	$.ajax({
-			type: "POST",
-			url: "http://184.106.93.224/?page_id=808",
-			data: {
-				term:searchVal
-			},
+			//type: "POST",
+			//url: "http://184.106.93.224/?page_id=808",
+			type: "GET",
+			url: "/fetch",
+			//data: {
+			//	term:searchVal
+			//},
 			success: function (result) {
 				if(result.length){
 					archiveItems = $.parseJSON(result);
@@ -255,9 +257,9 @@ function displayItems(){
 			thisObject.find('#list-item-date').html(thisItem.work_date);
 			thisObject.find('#list-item-title').html(thisItem.title);
 			// TODO: map theme indices to theme names
-			thisObject.find('#list-item-themes').html(thisItem.themes.toString());
+			//thisObject.find('#list-item-themes').html(thisItem.themes.toString());
 			// TODO: get tags
-			thisObject.find('#list-item-tags').html('Not in DB yet?');
+			//thisObject.find('#list-item-tags').html('Not in DB yet?');
 			thisObject.children('div').hover(itemThumbnailOver, itemThumbnailOut);
 			
 			if(i-startIndex < Math.ceil((endIndex-startIndex) / 2)){
