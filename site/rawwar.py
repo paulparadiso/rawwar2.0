@@ -20,6 +20,7 @@ urls = (
 	'/events', 'Events',
 	'/view', 'View',
 	'/about', 'About',
+	'/contact', 'Contact',
 	'/fetch', 'Fetch',
 )
 
@@ -34,40 +35,53 @@ class Archive:
 
 	def GET(self):
 		header = render.header('archive')
-		archive = render.archive(header)
+		footer = render.footer()
+		archive = render.archive(header, footer)
 		return archive
 
 class Submit:
 
 	def GET(self):
 		header = render.header('submit')
-		submit = render.submit(header)
+		footer = render.footer()
+		submit = render.submit(header, footer)
 		return submit
 
 class Events:
 
 	def GET(self):
 		header = render.header('events')
-		events = render.events(header)
+		footer = render.footer()
+		events = render.events(header, footer)
 		return events
 
 class View:
 
 	def GET(self):
 		header = render.header('view')
-		view = render.view(header)
+		footer = render.footer()
+		view = render.view(header, footer)
 		return view
 
 class About:
 
 	def GET(self):
 		header = render.header('about')
-		about = render.about(header)
+		footer = render.footer()
+		about = render.about(header, footer)
 		return about
+
+class Contact:
+
+	def GET(self):
+		header = render.header('')
+		footer = render.footer()
+		contact = render.contact(header, footer)
+		return contact
 
 class Fetch:
 
-	def GET(self):
+	def POST(self):
 		return json.dumps(archive_output)
 
 
