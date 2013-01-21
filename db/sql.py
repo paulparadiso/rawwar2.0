@@ -1,7 +1,10 @@
 import MySQLdb as mdb
+from MySQLdb import converters
 import couchdb
 
-con = mdb.connect('localhost','root', '', 'rawwar', charset='utf8')
+conv = converters.conversions.copy()
+conv[10] = str
+con = mdb.connect('localhost','root', '', 'rawwar', charset='utf8', conv=conv)
 cur = con.cursor(mdb.cursors.DictCursor)
 db_name = "rawwar_raw"
 couch = couchdb.Server()
