@@ -11,6 +11,7 @@ relationships = db['term_relationships_table']
 uploaders = db['uploaders_table']
 
 if __name__ == "__main__":
+	master = {}
 	for a in artworks.keys():
 		if a == '_rev' or a == '_id':
 			continue
@@ -29,7 +30,14 @@ if __name__ == "__main__":
 			if relationships[k]['object_id'] == int(artworks[a]['post_id']):
 				cats.append(relationships[k])
 		for c in cats:
-			c['name'] = terms[str(c['term_taxonomy_id'])]['name']
+			try:
+				c['name'] = terms[str(c['term_taxonomy_id'])]['name']
+			except KeyError:
+				print "\tKEY__ERROR"
 		print artworks[a]['title']
 		for c in cats:
-			print '\t' + c['name']
+			
+			try:
+				print '\t' + c['name']
+			except KeyError:
+				print c
