@@ -363,7 +363,6 @@ function openItem(which){
 		// embed video
 		var re = new RegExp('%VID%','g');
 		var vid_embed = videoEmbedTemplate.replace(re, thisItem.foreign_key);
-		alert(vid_embed);
 		$('#viewer-video').html(vid_embed);
 	//}
 	
