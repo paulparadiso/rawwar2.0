@@ -49,6 +49,17 @@ class Submit:
 		submit = render.submit(header, footer)
 		return submit
 
+	def POST(self):
+		params = web.input()
+		self._save_submission(params)
+		header = render.header('submit')
+		footer = render.footer()
+		thanks = render.thanks(header, footer)
+		return thanks
+
+	def _save_submission(self, s):
+		print s
+
 class Events:
 
 	def GET(self):

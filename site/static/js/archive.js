@@ -367,6 +367,7 @@ function openItem(which){
 	//}
 	
 	// position viewer
+	window.scrollTo(0,0);
 	var w = $(window).width();
 	var vw = 600;//$('#viewer').css('width');
 	var left = (w - vw) / 2;
@@ -384,8 +385,8 @@ function closeViewer(){
 
 function filterItems(){
 	// read through sourceItems and put into archiveItems
-	archiveItems = sourceItems;
-	/*
+	//archiveItems = sourceItems;
+	
 	archiveItems = [];
 	var thisItem;
 	var pushIt = false;
@@ -395,25 +396,28 @@ function filterItems(){
 		if(testItem(thisItem))
 			archiveItems.push(thisItem);
 	}
-	*/
 }
 
 function testItem(which){
 	// THEMES
+	/*
 	var themeTest = false;
 	for (var i in which.themes){
 		if($.inArray(which.themes[i],filterThemes) != -1)
 			//return true;
 			themeTest = true;
 	}
-	
+	*/
+	var themeTest = true;
 	// MEDIA
+	/*
 	var mediaTest = false;
 	if(!which.type) which.type = "video";
 	if($.inArray(which.type, filterMedia) != -1)
 		//return true;
 		mediaTest = true;
-	
+	*/
+	var mediaTest = true;
 	// DECADE
 	var thisYear = parseInt(which.work_date);
 	var dec, limit;
@@ -426,6 +430,7 @@ function testItem(which){
 		if(dec == 2010 && thisYear >= dec)
 			//return true; 	// 2010 and up
 			decTest = true;
+		decTest = true;
 	}
 	
 	// TAGS

@@ -34,10 +34,11 @@ if __name__ == "__main__":
 				c['name'] = terms[str(c['term_taxonomy_id'])]['name']
 			except KeyError:
 				print "\tKEY__ERROR"
+				continue
 		print artworks[a]['title']
 		for c in cats:
-			
 			try:
 				print '\t' + c['name']
 			except KeyError:
 				print c
+				continue

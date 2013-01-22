@@ -26,7 +26,7 @@ $def with(header, footer)
       		<!-- BEGIN HEADER -->
 			
 			$:header
-      		<form name="post" action="http://184.106.93.224/?page_id=298" method="post" id="post">
+      		<form name="post" action="/submit" method="post" id="post">
 				<input type="hidden" id="referredby" name="referredby" value="" ></input>
 				<input type="hidden" id="artwork-type" name="artwork-type" value="video" ></input>
 			<div id="form-top">
@@ -357,11 +357,9 @@ $def with(header, footer)
 					</div>
 				</div>
 				</div>
-				
 				<div id="submit">
 					<img id="submit-button" class="submit" alt="Submit Artwork" src="static/img/submit_artwork.png">
-				</div>	
-				$:footer		
+				</div>			
 		</div>
 		<div id="trace"></div>
 		<div id="overlay" class="simple-overlay">
