@@ -430,7 +430,6 @@ function testItem(which){
 		if(dec == 2010 && thisYear >= dec)
 			//return true; 	// 2010 and up
 			decTest = true;
-		decTest = true;
 	}
 	
 	// TAGS
