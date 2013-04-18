@@ -33,6 +33,8 @@ class Index:
 	def GET(self):
 		pass
 
+# archive.html
+
 class Archive:
 
 	def GET(self):
@@ -40,6 +42,8 @@ class Archive:
 		footer = render.footer()
 		archive = render.archive(header, footer)
 		return archive
+
+# submit.html
 
 class Submit:
 
@@ -60,6 +64,8 @@ class Submit:
 	def _save_submission(self, s):
 		print s
 
+# events.html
+
 class Events:
 
 	def GET(self):
@@ -67,6 +73,8 @@ class Events:
 		footer = render.footer()
 		events = render.events(header, footer)
 		return events
+
+# view.html
 
 class View:
 
@@ -76,6 +84,8 @@ class View:
 		view = render.view(header, footer)
 		return view
 
+# about.html
+
 class About:
 
 	def GET(self):
@@ -84,6 +94,8 @@ class About:
 		about = render.about(header, footer)
 		return about
 
+# contact.html
+
 class Contact:
 
 	def GET(self):
@@ -91,6 +103,8 @@ class Contact:
 		footer = render.footer()
 		contact = render.contact(header, footer)
 		return contact
+
+# fetch all items in the database.
 
 class Fetch:
 
